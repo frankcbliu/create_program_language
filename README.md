@@ -21,6 +21,23 @@ $ mycalc
 >>7.000000
 ```
 
+`2.2.5-confilt/`下：
+```shell
+$ yacc -dv mycalc.y
+conflicts: 3 shift/reduce
+```
+
+`2.2.6-error_handle/`下：
+```shell
+$ mycalc
+2-3
+>>-1.000000
+1//2
+parser error near /
+2+2
+>>4.000000
+^C
+```
 
 
 
